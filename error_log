@@ -1,0 +1,8 @@
+[08-Nov-2015 16:46:35 America/Los_Angeles] PHP Fatal error:  Cannot use object of type Bean as array in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 154
+[08-Nov-2015 16:55:52 America/Los_Angeles] PHP Parse error:  syntax error, unexpected T_STRING in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 170
+[09-Nov-2015 11:40:32 America/Los_Angeles] PHP Parse error:  syntax error, unexpected T_RETURN in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 137
+[09-Nov-2015 16:19:30 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '[' in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 234
+[09-Nov-2015 16:19:45 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '[' in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 234
+[09-Nov-2015 16:19:48 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '[' in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/page.tpl.php on line 234
+[10-Nov-2015 08:59:07 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/block--block--6.tpl.php on line 81
+[10-Nov-2015 09:21:22 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';' in /home/dailya5/public_html/wimp/sites/default/themes/custom/dailyacts/templates/block--block--6.tpl.php on line 65

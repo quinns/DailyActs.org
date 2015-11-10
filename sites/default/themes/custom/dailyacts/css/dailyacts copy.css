@@ -1,0 +1,466 @@
+/* custom CSS goes here */
+
+body{
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 18px;
+}
+
+
+a{
+	color: #7BAD3A;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Architects Daughter', cursive;
+}
+nav{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+p{
+/* 	font-family: "Open Sans", sans-serif; */
+}
+
+/* SECONDARY NAVBAR */
+ul.navbar-nav.secondary{
+	float: none;
+	width: 100%;
+	background-color: #000;	
+	margin: 0;
+	padding: 0;
+}
+ul.navbar-nav.secondary a{
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ul.navbar-nav.secondary li.first{
+	float: left;
+}
+ul.navbar-nav.secondary li{
+	float: right;
+}
+ul.navbar-nav.secondary a:hover,
+ul.navbar-nav.secondary a:focus{
+	background-color: #333;
+}
+ul.navbar-nav.secondary #donate a{
+	background-color: #f38420;
+}
+ul.navbar-nav.secondary #donate a:focus,
+ul.navbar-nav.secondary #donate a:hover{
+	background-color: #f9b273;
+}
+.navbar-nav i{
+	padding-right: 10px;
+	opacity: .75;
+}
+.navbar-nav.secondary li span.youtube,
+.navbar-nav.secondary li span.facebook, 
+.navbar-nav.secondary li span.flickr {
+	display: none;
+}
+.navbar-nav.secondary li a.facebook,
+.navbar-nav.secondary li a.youtube,
+.navbar-nav.secondary li a.flickr{
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+/* body > div.container.supernav > ul > li:nth-child(5) > a > span */
+/* MAIN NAVBAR */
+
+.supernav{
+	position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+    background-color: #000;
+    
+}
+.supernav div.wrapper{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+header#navbar{
+	margin-top: 0;
+	border: none;
+	padding: 0;
+	z-index: 100;
+	background: transparent;
+	border-radius: 0;
+	margin-top: 30px;
+}
+body header#navbar .navbar-collapse{
+	background-image: url(../images/navbar-bkg.png);
+	background-repeat: repeat-x;
+}
+.navbar-default .navbar-nav>.active>a{
+	background: transparent;
+}
+.navbar-toggle{
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+body.not-front header#navbar{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.primary-nav-wrapper{
+	background-color: #7BAD3A;
+}
+
+
+.container.primary-nav{
+	background: #7BAD3A;
+	width: 100%;
+}
+/* LOGO */
+/* header#navbar .navbar-brand{ */
+
+
+/*
+a.navbar-brand{
+
+
+	background-image: url(../images/da-logo-med-white.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: 100%;
+	height: 90px;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-top: 5px;
+	margin: 15px 15px 0 15px;
+}
+*/
+
+a.navbar-brand{
+	color: #fff;
+}
+#navbar{
+		margin-top: 30px;
+}
+body.not-front header#navbar .navbar-brand{
+	background-image: url(../images/logo-stroked.png);
+	height: 75px;
+
+}
+
+/*
+.main-nav-wrapper{
+	width: 100%;
+	max-width: 100%;
+}
+*/
+
+
+/*
+header#navbar {
+	margin-top: 30px !important;
+}
+*/
+
+/* CAROUSEL */
+
+.main-container{
+	font-size: 20px;
+	line-height: 1.25em;
+}
+#front-carousel{
+	margin-top: -115px;
+	clear: both;
+	top: -115px;
+	height: 500px;
+}
+#front-carousel .item{
+/* 	max-height: 500px; */
+	background-color: #000;
+}
+#front-carousel .item .slide-art{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#front-carousel .item img.slide-art{
+	opacity: .5;
+}
+#front-carousel .carousel-caption{
+	padding-bottom: 80px;
+	left: initial;
+    right: initial;
+    text-align: center;
+    width: 100%;
+}
+#front-carousel .carousel-caption h1{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 120px;
+	text-shadow: 2px 2px 0 #ccc;
+	color: #7BAD3A;
+	padding-top: 0;
+	text-transform: uppercase;
+}
+#front-carousel .carousel-caption .btn-first{
+	margin-right: 30px;
+}
+#front-carousel .carousel-caption h3.caption-2{
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#front-carousel .btn{
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+	background-color: #7BAD3A;
+	border: none;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+#front-carousel .btn-default{
+	background-color: #fff;
+	border: 2px solid #7BAD3A;
+	color: #7BAD3A;
+}
+
+#front-carousel .carousel-caption h2,
+#front-carousel .carousel-caption h3{
+	font-family: 'Rokkitt';
+	text-transform: uppercase;
+}
+#front-carousel .carousel-control{
+	z-index: 10;
+}
+
+
+
+/* COASTAL BLOCK */
+#block-block-4{
+	height: 250px;
+}
+#block-block-4 .tagline{
+	background: #fff;
+	padding: 10px;
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 16px;
+	margin-top: -150px;
+	margin-bottom: 150px;
+	text-align: center;
+}
+
+#block-block-4 .parallax-window{
+	background: transparent;
+	height: 250px;
+}
+
+/* FRONT PAGE */
+body.front .nav-tabs,
+body.front .field-name-body,
+body.front h1.page-header{
+	display: none;
+}
+/* TAGLINE BLOCK */
+#block-block-3 {
+	text-align: center;
+	margin: 30px;
+	margin-top: 0;
+	font-size: 36px;
+	line-height: 1.25em;
+
+}
+#block-block-3,
+#block-block-3 p{
+	font-family: 'Architects Daughter', cursive;	
+}
+
+
+
+/* INTERIOR HEADER IMAGES */
+body.not-front .interior-header-image{
+/* 	background-image: url('../images/headers/staff.jpg'); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 300px;
+	margin-top: -80px;
+	display: table;
+	width: 100%;
+}
+
+body.not-front .interior-header-image h1{
+	color: #000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+body.not-front .interior-header-image h1 span{
+/* 	background: #fff;	 */
+	background-image: url('../images/transp.png');
+	background-repeat: repeat;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* ARTICLES */
+body.node-type-article .field-name-field-image img{
+	float: left;
+	margin-right:1em;
+	margin-bottom: .5em;
+	max-width: 60%;
+	min-width: 40;
+	height: auto;
+	
+}
+
+
+/* LATEST POSTS BLOCK */
+
+
+#block-views-latest-posts-block-1 .views-field-field-image img{
+	float: left;
+	max-width: 200px;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+
+#block-views-latest-posts-block-1 .views-row{
+	min-height: 160px;
+}
+#block-views-latest-posts-block-1 .views-field-body,
+#block-views-latest-posts-block-1 .views-field-body p{
+	font-family: 'Rokkitt';
+    font-size: 18px  ;
+}
+
+
+#block-views-latest-posts-block-1 .views-row{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+
+/* EVENT VIEW */
+
+.view-latest-posts .views-field-body p{
+	font-family: 'Rokkitt';
+    font-size: 18px  ;
+}
+
+.view-latest-posts .views-field-field-image img {
+	max-width: 150px;
+	float: left; 
+	margin-right: 1em;
+	margin-bottom: .5em;
+	height: auto;
+}
+.view-latest-posts .views-row{
+
+	border-bottom: 1px solid #eee;
+	margin-botton: 1em;
+	padding-bottom: 1em;
+}
+/* EVENT NODES */
+body.node-type-event .field-name-field-featured-image img{
+	float: left;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	max-width: 250px;
+	min-width: 30%;
+	height: auto;
+}
+
+
+
+.view-upcoming-events .views-field-field-featured-image img{
+		float: left;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	max-width: 250px;
+	min-width: 30%;
+	height: auto;
+}
+
+.view-upcoming-events .view-row{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #eee;
+	
+}
+
+/* RRSSB */
+#block-rrssb-rrssb h2.block-title{
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	opacity: .5;
+	text-transform: uppercase;
+}
+
+/* ALERTS */
+
+
+.alert{
+	margin-top: 130px;
+}
+
+/* enable bootstrap menu to activate on hover, larger screens only */
+@media (min-width: 979px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	.navbar .dropdown-menu {
+		 margin-top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	header#navbar{
+		background-color: #7BAD3A;
+		padding: 0 15px 15px;		
+/*
+		margin-left: 0;
+		margin-right: 0;
+*/
+	}
+	.supernav{
+		padding-left: 0;
+		padding-right: 0;		
+	}
+}
+@media(max-width: 768px){
+	.navbar-nav.secondary li span.email,
+	.navbar-nav.secondary li span.events, 
+	.navbar-nav.secondary li span.donate {
+		display: none;
+	}
+/*
+	body.front .main-container{
+		margin-top: 0;
+	}
+*/
+}
+@media (min-width: 768px) {
+	body.not-front .main-container{
+/* 		width: 85% */
+	}
+	
+	body.front .main-container{
+		margin-top: -70px;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar.container{
+/* 		border: 1px solid red; */
+		max-width: 100%;
+	}
+	body.front .main-container{
+		margin-top: 0;
+	}
+}
+

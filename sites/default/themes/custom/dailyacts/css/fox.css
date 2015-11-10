@@ -1,0 +1,99 @@
+/* put yo Daily Acts css here */
+
+.view-staff .views-row {
+	margin: 5px 5px 15px 10px;
+}
+
+.view-staff .views-field-body {
+	margin-left: 10px;
+
+}
+
+.views-field-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.views-field-job-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+.node-staff .field-name-field-staff-photo {
+	max-width: 40%;
+	height: auto;
+	float: left;
+    overflow: hidden;
+    border-radius: 50%;
+/*     margin: 0 auto; */
+	
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+
+#block-views-how-we-help-block-1 {
+	background: #f3f3f3;
+	padding-bottom: 30px;
+	overflow: auto;
+}
+
+#block-views-how-we-help-block-1 h2 {
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-bottom: 15px;
+	/*border-bottom: 1px solid #7bad3a;*/
+	border-bottom: 1px solid #ccc;
+
+}
+
+.view-how-we-help .col-md-4{
+	/*min-height: 300px;*/
+	margin-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.view-how-we-help .views-field-field-teaser-text {
+	padding: 10px 30px 10px 30px;
+
+}
+
+.view-how-we-help .views-field-field-teaser-text .field-content {
+	/*font-family: "Open Sans";*/
+	font-size: 14px;
+	/*padding: 10px 20px 10px 20px;*/
+	line-height: 1.0em;
+	/*font-weight: */
+}
+
+
+/*.view-how-we-help img {
+	width: 50%;
+	height: auto;
+	border-radius: 400px;
+	margin: 0 auto;
+}
+*/
+
+.view-how-we-help .views-field-field-featured-image .field-content {
+    width: 100px;
+    height: 100px;
+    /*position: relative;*/
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.view-how-we-help img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+
+}
+
+
+/*.views-field-field-featured-image*/

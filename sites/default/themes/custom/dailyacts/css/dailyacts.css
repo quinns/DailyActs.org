@@ -1,0 +1,538 @@
+/*! GENERAL */
+body{
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 18px;
+}
+a{
+	color: #7BAD3A;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Architects Daughter', cursive;
+}
+nav{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.navbar a,
+.btn{
+	text-decoration: none;
+}
+
+/*! SECONDARY NAVBAR */
+ul.navbar-nav.secondary{
+	float: none;
+	width: 100%;
+	background-color: #000;	
+	margin: 0;
+	padding: 0;
+}
+ul.navbar-nav.secondary a{
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ul.navbar-nav.secondary li.first{
+	float: left;
+}
+ul.navbar-nav.secondary li{
+	float: right;
+}
+ul.navbar-nav.secondary a:hover,
+ul.navbar-nav.secondary a:focus{
+	background-color: #333;
+}
+ul.navbar-nav.secondary #donate a{
+	background-color: #f38420;
+}
+ul.navbar-nav.secondary #donate a:focus,
+ul.navbar-nav.secondary #donate a:hover{
+	background-color: #f9b273;
+}
+.navbar-nav i{
+	padding-left: 5px;
+	padding-right: 5px;
+	opacity: .75;
+}
+.navbar-nav.secondary li span.youtube,
+.navbar-nav.secondary li span.facebook, 
+.navbar-nav.secondary li span.flickr {
+	display: none;
+}
+.navbar-nav.secondary li a.fa-calendar{
+	padding-left: 0;
+}
+
+/*! MAIN NAVBAR */
+.supernav{
+	position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+    background-color: #000;
+	font-size: 14px;
+}
+.supernav a{
+	text-decoration: none;   
+}
+
+.supernav div.wrapper{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+header#navbar{
+	margin-top: 30px;
+	border: none;
+	padding: 0;
+	z-index: 100;
+	background: transparent;
+	border-radius: 0;
+}
+.navbar-default .navbar-nav>.active>a{
+	background: transparent;
+}
+.navbar-toggle{
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+body.not-front header#navbar{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.primary-nav-wrapper{
+	background-color: #7BAD3A;
+}
+
+/*! TABS */
+ul.nav-tabs a{
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+/*! LOGO */
+
+.navigation-wrapper a.navbar-brand{
+	background-image: url(../images/logo-stroked.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: 200%;
+	height: 90px;
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+header#navbar{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	height: 55px;
+}
+header#navbar .container{
+	margin-top: 31px;
+}
+a.navbar-brand{
+	color: #fff;
+}
+body.not-front header#navbar .navbar-brand{
+	height: 75px;
+}
+
+.navbar-header{
+	margin-top: 30px;
+}
+
+.navigation-wrapper{
+	background-image: url(../images/navbar-bkg.png);
+	background-repeat: repeat-x;
+	background-size: 28px;
+	height: 80px;
+	z-index: 500;
+	position: relative;
+
+}
+
+/*! CAROUSEL */
+.main-container{
+	font-size: 20px;
+	line-height: 1.25em;
+}
+#front-carousel{
+	top: -100px;
+	clear: both;
+}
+#front-carousel .item{
+	max-height: 500px;
+	background-color: #000;
+}
+#front-carousel .item .slide-art{
+	height: 500px;
+	background-size: cover;
+	background-position: center center;
+	opacity: .5;
+}
+#front-carousel .carousel-caption{
+	padding-bottom: 80px;
+	left: initial;
+    right: initial;
+    text-align: center;
+    width: 100%;
+}
+#front-carousel .carousel-caption h1{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 120px;
+	text-shadow: 2px 2px 0 #ccc;
+	color: #7BAD3A;
+	padding-top: 0;
+	text-transform: uppercase;
+}
+#front-carousel .carousel-caption .btn-first{
+	margin-right: 30px;
+}
+#front-carousel .carousel-caption h3.caption-2{
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#front-carousel .btn{
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+	background-color: #7BAD3A;
+	border: none;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+#front-carousel .btn-default{
+	background-color: #fff;
+	border: 2px solid #7BAD3A;
+	color: #7BAD3A;
+}
+#front-carousel .carousel-caption h2,
+#front-carousel .carousel-caption h3{
+	font-family: 'Rokkitt';
+	text-transform: uppercase;
+}
+#front-carousel .carousel-control{
+	z-index: 10;
+}
+
+
+/*! COASTAL BLOCK */
+#block-block-4{
+	height: 250px;
+}
+#block-block-4 .tagline{
+	background: #fff;
+	padding: 10px;
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 16px;
+	margin-top: -150px;
+	margin-bottom: 150px;
+	text-align: center;
+}
+
+#block-block-4 .parallax-window{
+	background: transparent;
+	height: 250px;
+}
+
+/* FRONT PAGE */
+body.front .nav-tabs,
+body.front .field-name-body,
+body.front h1.page-header{
+	display: none;
+}
+body.not-front header#page-header{
+	max-height: 300px;
+}
+body.not-front h1.page-header{
+	font-family: 'Rokkitt', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+}
+/*! TAGLINE BLOCK */
+#block-block-3 {
+	text-align: center;
+	margin: 30px;
+	font-size: 30px;
+	line-height: 1.25em;
+
+}
+#block-block-3,
+#block-block-3 p{
+	font-family: 'Architects Daughter', cursive;	
+}
+
+
+/*! INTERIOR HEADER IMAGES */
+body.not-front .interior-header-image{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+/* 	height: 230px; */
+	top: -100px;
+	display: table;
+	width: 100%;
+	position: relative;
+}
+body.not-front .interior-header-image h1{
+	color: #000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+	border-bottom: 0;
+}
+body.not-front .interior-header-image  .masking-tape .section-header{
+	font-family: 'Architects Daughter', cursive;	
+}
+body.not-front .interior-header-image  .masking-tape span{
+	background-image: url('../images/transp.png');
+	background-repeat: repeat;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/*! ARTICLES */
+body.node-type-article .field-name-field-image img{
+	float: left;
+	margin-right:1em;
+	margin-bottom: .5em;
+	max-width: 60%;
+	min-width: 40;
+	height: auto;
+}
+
+
+/*! LATEST POSTS BLOCK */
+#block-views-latest-posts-block-1 .views-field-field-image img{
+	float: left;
+	max-width: 200px;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+#block-views-latest-posts-block-1 .views-row{
+	min-height: 160px;
+}
+#block-views-latest-posts-block-1 .views-field-body,
+#block-views-latest-posts-block-1 .views-field-body p{
+	font-family: 'Rokkitt';
+    font-size: 18px  ;
+}
+#block-views-latest-posts-block-1 .views-row{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #eee;
+}
+
+
+/*! EVENT VIEW */
+.view-latest-posts .views-field-body p{
+	font-family: 'Rokkitt';
+    font-size: 18px  ;
+}
+.view-latest-posts .views-field-field-image img,
+.view-upcoming-events .views-field-field-featured-image img{
+	max-width: 150px;
+	float: left; 
+	margin-right: 1em;
+	margin-bottom: .5em;
+	height: auto;
+}
+.view-upcoming-events .views-row,
+.view-latest-posts .views-row{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+/*! EVENT NODES */
+body.node-type-event .field-name-field-featured-image img{
+	float: left;
+	margin-right: 1em;
+	margin-bottom: .5em;
+	max-width: 250px;
+	min-width: 30%;
+	height: auto;
+}
+
+/*! STAFF VIEW */
+.view-id-staff .views-row{
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.view-id-staff .views-field-field-staff-photo img{
+	overflow: hidden;
+    border-radius: 50%;
+}
+.view-id-staff h3{
+	font-family: 'Rokkitt', sans-serif;
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+/*! FRONT PAGE VIEWS */
+
+.view-upcoming-events .view-row,
+.view-latest-posts .view-row{
+	margin-bottom: 1em;
+	border-bottom: 1px solid #eee;
+	
+}
+
+.view-upcoming-events .view-footer,
+.view-latest-posts .view-footer{
+	clear: both;
+	text-align: right;
+}
+    
+
+/*! STAFF NODES */
+body.node-type-staff .field-name-field-job-title{
+	font-family: 'Open Sans', san-serif;
+	color: #7BAD3A;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+/*! RRSSB */
+#block-rrssb-rrssb h2.block-title{
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	opacity: .5;
+	text-transform: uppercase;
+}
+
+
+/*! FRONT PAGE BLOCKS */
+#block-block-5{
+	margin-top: 1em;
+}
+#block-block-5 i.fa{
+	color: #f38420;	
+}
+
+/*! FOOTER */
+footer.footer{
+	border-top: none;
+}
+.footer-wrapper{
+	background-color: #333;
+	color: #fff;
+}
+.footer-wrapper h4{
+	font-family: 'Rokkitt', sans-setif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #999;
+	border-bottom: 1px solid #666;
+	margin-bottom: 1em;
+}
+.footer-wrapper .recent-blogs .views-field-created{
+	font-size: .75em;
+}
+.footer-wrapper .recent-blogs .views-row{
+	margin-bottom: 1em;	
+}	
+
+
+/*! BIG DONATION BUTTON */
+#block-block-7 .btn{
+	font-size: 2em;
+	background-color: #f38420;	
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	line-height: 1;
+}
+#block-block-7 .btn:hover,
+#block-block-7 .btn:focus{
+	background-color: #f9b273;	
+}
+
+
+/*! FOOTER COLUMNS */
+#block-block-6 a.btn{
+	width: 100%;
+	margin-bottom: 1em;
+	background-color: #666;
+	border: none;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+#block-block-6 a.btn:hover,
+#block-block-6 a.btn:focus{
+	background-color: #F58400;
+	color: #000;
+}
+#block-block-6 a:hover,
+#block-block-6 a:focus{
+	color: #BCE8F1;
+}
+#block-block-6 .daily-acts-logo{
+	background-image: url(../images/da-logo-med-white.png);
+	background-size: cover;
+	width: 170px;
+	height: 83px;
+	opacity: .8;
+	margin-bottom: 1em;
+}
+#block-block-6 .hi{
+	color: #F58400;
+}
+
+
+/*! CREDITS BLOCK */
+#block-block-1{
+	margin-top: 1em;
+}
+
+
+/* ! MEDIA QUERIES */
+
+/* enable bootstrap menu to activate on hover, larger screens only */
+@media (min-width: 979px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	.navbar .dropdown-menu {
+		 margin-top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	header#navbar{
+		padding: 0 15px 15px;		
+	}
+	.supernav{
+		padding-left: 0;
+		padding-right: 0;		
+	}
+}
+@media(max-width: 768px){
+	.navbar-nav.secondary li span.email,
+	.navbar-nav.secondary li span.events, 
+	.navbar-nav.secondary li span.donate {
+		display: none;
+	}
+
+}
+@media (min-width: 768px) {
+	body.front .main-container{
+		margin-top: -90px;
+	}
+	header#navbar{
+		margin-left: 150px;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.navbar.container{
+		border: 1px solid red;
+		max-width: 100%;
+	}
+}
+
