@@ -6,6 +6,7 @@ sites/*/files
 sites/*/private
 
 # Ignore some stuff for this project
+cache/*
 starterkit.zip
 sites/default/starterkit.sql.gz
 sites/default/themes/*/.sass-cache/*
