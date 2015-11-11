@@ -12,10 +12,12 @@ regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
+; regions[front_features] = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
+regions[sub_footer]     = 'Sub-Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
@@ -61,6 +63,9 @@ stylesheets[all][] = css/fox.css
 
 scripts[] = 'js/dailyacts.js'
 scripts[] = 'js/parallax.min.js'
+
+; to support touch events (swipe) on the carousel
+scripts[] = 'js/jquery.mobile.custom.min.js'
 
 ; ;-------------------------
 ; ; METHOD 2: Bootstrap CDN
