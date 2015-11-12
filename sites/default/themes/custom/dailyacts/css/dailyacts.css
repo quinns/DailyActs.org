@@ -21,6 +21,10 @@ nav{
 .alert-block{
 	margin: 1em;
 }
+
+#block-system-main{
+	margin-bottom: 1em;	
+}
 /*! SECONDARY NAVBAR */
 ul.navbar-nav.secondary{
 	float: none;
@@ -468,6 +472,32 @@ body.node-type-staff .field-name-field-job-title{
 	color: #f38420;	
 }
 
+/* ! CONTACT FORM */
+.webform-client-form-44{
+	max-width: 600px;
+}
+.webform-client-form-44 .webform-component{
+	margin-bottom: 1em;
+}
+.webform-client-form-44 .grippie{
+	display: none;
+}
+
+.webform-client-form-44  .form-select{
+	width: auto;
+}
+
+/* ! BUTTONS IN NODES */
+.node .btn{
+	background-color: #7BAD3A;
+	border: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+.node .btn:hover,
+.node .btn:focus{
+	background-color: #F58400;
+}
 /*! FOOTER */
 footer.footer{
 	border-top: none;
@@ -496,6 +526,23 @@ footer.footer{
 body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 
 
+}
+
+
+
+/*! SIDEBARS */
+
+
+.region-sidebar-second .block{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #7BAD3A;
+	padding: 1em;
+/* padding: 0 1em 0 1em; */
+	color: #fff;
+	font-size: 16px;
+}
+.region-sidebar-second .block h2.block-title{
+	font-family: 'Rokkitt', sans-serif;
 }
 
 /*! BIG DONATION BUTTON */
@@ -599,14 +646,12 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 
 @media (min-width: 979px) {
 /* enable bootstrap menu to activate on hover, larger screens only */
-/*
 	.dropdown:hover .dropdown-menu {
 		display: block;
 	}
 	.navbar .dropdown-menu {
 		 margin-top: 0px;
 	}
-*/
 	
 /*
 	body.front #site-body{
@@ -627,6 +672,15 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 		position: relative;
 		top: -80px;
 	}
+	
+	
+	/*! CALENDAR */
+	.fc-event-inner{
+		max-height: 200px;
+	}
+
+
+	
 }
 @media (max-width: 992px) {
 	header#navbar{

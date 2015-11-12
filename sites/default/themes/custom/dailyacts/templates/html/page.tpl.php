@@ -168,9 +168,15 @@
   		<?php 
 		foreach($slide_set as $key => $value){ 
 				$slide['image'] = file_create_url($value->field_carousel_image[LANGUAGE_NONE][0]['uri']);
-				$slide['caption1'] = $value->field_caption_1[LANGUAGE_NONE][0]['safe_value'];
-				$slide['caption2'] = $value->field_caption_2[LANGUAGE_NONE][0]['safe_value'];
-				$slide['button_set'] = $value->field_button_set[LANGUAGE_NONE][0]['safe_value'];
+				if(isset($value->field_caption_1[LANGUAGE_NONE][0]['safe_value'])){ 
+					$slide['caption1'] =  $value->field_caption_1[LANGUAGE_NONE][0]['safe_value']; 
+				}
+				if(isset($value->field_caption_2[LANGUAGE_NONE][0]['safe_value'])){
+					$slide['caption2'] =  $value->field_caption_2[LANGUAGE_NONE][0]['safe_value'];
+				}
+				if(isset($value->field_button_set[LANGUAGE_NONE][0]['safe_value'])){
+					$slide['button_set'] =  $value->field_button_set[LANGUAGE_NONE][0]['safe_value'];
+				}
 				$slide['headline'] = $value->title;
 				if($key == 0){
 					$active = ' active ';
@@ -223,22 +229,13 @@
 
     <?php print render($page['header']); ?>
     
-    
-<!--
-    <div class="interior-header-image">
-        <h1 class="page-header"><span><?php print $title; ?></span></h1>
-    </div>
--->
-    
-
-<!-- this background scrolly image should be made dynamic -->
-
 <?php
 	// 	try to load a custom header
-	$site_section = taxonomy_term_load($node->field_site_section['und'][0]['tid']);
+	if(!empty($node->field_site_section['und'][0]['tid'])){
+		$site_section = taxonomy_term_load($node->field_site_section['und'][0]['tid']);		
+		$header_image = $site_section->field_header_image['und'][0]['uri'];
+	}
 
-	$header_image = $site_section->field_header_image['und'][0]['uri'];
-// 	$header_image = $node->field_site_section['und'][0]['taxonomy_term']->field_header_image['und'][0]['uri'];
 
 	if(!empty($header_image)){
 		$header_image = file_create_url($header_image);
