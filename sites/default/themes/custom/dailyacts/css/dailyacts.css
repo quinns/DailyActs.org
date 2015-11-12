@@ -15,7 +15,7 @@ nav{
 	font-weight: 700;
 }
 .navbar a,
-.btn{
+.btn {
 	text-decoration: none;
 }
 .alert-block{
@@ -25,6 +25,11 @@ nav{
 #block-system-main{
 	margin-bottom: 1em;	
 }
+.btn{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
 /*! SECONDARY NAVBAR */
 ul.navbar-nav.secondary{
 	float: none;
@@ -497,13 +502,25 @@ body.node-type-staff .field-name-field-job-title{
 }
 /*! RRSSB */
 
-
+#block-rrssb-rrssb h2.block-title,
+#block-rrssb-rrssb .rrssb-text{
+	font-family: "Open Sans", sans-serif;	
+}
 #block-rrssb-rrssb h2.block-title{
-	font-family: "Open Sans", sans-serif;
+
 	font-size: 16px;
 	opacity: .5;
 	text-transform: uppercase;
 	margin-top: 1em;
+}
+#block-rrssb-rrssb a{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+#block-rrssb-rrssb a:hover,
+#block-rrssb-rrssb a:focus{
+	-webkit-filter: grayscale(0%);
+	filter: none;
 }
 
 /* !PROJECT SPOTLIGHT BLOCK */
@@ -538,13 +555,13 @@ body.node-type-staff .field-name-field-job-title{
 #block-views-projects-block-1 .fpt-title-wrapper{
 	width: 100%;
 	height: 35px;
-	background: #333;
 	color: #fff;
-	padding: 5px;
 	position: relative;
 	top: 166px;
-	opacity: 0.8;
+	background-image: url(../images/gray-bkg.png);
+	padding: 5px 5px 0 5px;
 }
+
 #block-views-projects-block-1 .view-footer{
 	clear: both;
 	text-align: center;
@@ -554,12 +571,27 @@ body.node-type-staff .field-name-field-job-title{
 /* 	margin-top: 1em; */
 	color: #fff;
 	border: 1px solid #fff;
-	
+}
+#block-views-projects-block-1 .fpt-title{
+	margin-left: 5px;
+}
+#block-views-projects-block-1 i.fa{
+	margin-right: .5em;
+	color: #fff;
 }
 
-#block-views-projects-block-1 i.fa{
-	margin-right: 1em;
-	color: #fff;
+#block-views-projects-block-1 .fpt-category{
+	float: right;
+	background-color: #72A630;
+    margin-right: -5px;	
+    padding: 5px 10px 5px 10px;
+    top: -5px;
+    position: relative;
+/*
+	height: 35px; 
+    min-width: 100px;
+    text-align: center;
+*/
 }
 /*! FRONT PAGE BLOCKS */
 #block-block-5{
@@ -638,14 +670,25 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #7BAD3A;
 	padding: 1em;
-/* padding: 0 1em 0 1em; */
 	color: #fff;
 	font-size: 16px;
 }
 .region-sidebar-second .block h2.block-title{
 	font-family: 'Rokkitt', sans-serif;
 }
-
+/* ! PROJECT SIDEBAR */
+#block-views-project-sidebar-block-1{
+	background-color: #f38420;	
+}
+#block-views-project-sidebar-block-1 h3{
+	font-family: 'Open Sans', sans-serif;	
+	margin-bottom: 0;
+	font-size: 16px;
+}
+#block-views-project-sidebar-block-1 a{
+	font-family: 'Rokkitt', sans-serif;	
+	color: #fff;
+}
 /*! BIG DONATION BUTTON */
 #block-block-7 .btn{
 	font-size: 2em;

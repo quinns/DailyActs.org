@@ -21,10 +21,14 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-
+// dpm($row, 'row');
 $image = image_style_url('featured_project_thumbnail', $row->field_field_featured_image[0]['raw']['uri']);
+$category = null;
+if(isset($row->field_field_project_type[0]['rendered']['#markup'])){
+	$category = $row->field_field_project_type[0]['rendered']['#markup'];
+}
 
-drupal_add_css(' div.fpt-'.$row->nid.' { background-image: url("'.$image.'"); } ', array('type' =>'inline', 'group' => CSS_THEME)); 
+drupal_add_css('.fpt-'.$row->nid.' { background-image: url("'.$image.'"); } ', array('type' =>'inline', 'group' => CSS_THEME)); 
 
-echo l('<div class="featured-project-thumbnail fpt-'.$row->nid.'"><div class="fpt-title-wrapper">'.$row->node_title.'</div></div>', 'node/'.$row->nid, array('html' => true));
+echo l('<div class="featured-project-thumbnail fpt-'.$row->nid.'"><div class="fpt-title-wrapper"><span class="fpt-title">'.$row->node_title.'</span> <span class="fpt-category">'.$category.'</span></div></div>', 'node/'.$row->nid, array('html' => true));
 
