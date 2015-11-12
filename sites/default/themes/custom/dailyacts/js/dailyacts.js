@@ -3,7 +3,7 @@
 jQuery(document).ready(function($) {
 	// enable click on top-level navbar element
 	$(window).resize(function(){
-		if ($(window).width() >= 979){	
+		if ($(window).width() >= 767){	
       			$('nav ul.nav li a').removeClass('dropdown-toggle');
        			$('nav ul.nav li a').removeAttr('data-toggle');
  		}	
@@ -11,6 +11,8 @@ jQuery(document).ready(function($) {
 
 	// apply img-responsive class to all images within the node body
  	$('div.node img').addClass('img-responsive');
+ 	// except for ...
+ 	$('div.node .field-type-file img').removeClass('img-responsive'); 	
  	
  	// help parallax window adjust on window resize
  	jQuery(window).trigger('resize').trigger('scroll');

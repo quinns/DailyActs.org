@@ -276,6 +276,10 @@
 	      <?php if (!empty($page['highlighted'])): ?>
 	        <div class="highlighted"><?php print render($page['highlighted']); ?></div>
 	      <?php endif; ?>
+
+
+
+
 	
 	<div class="main-container container">
 		
@@ -290,9 +294,6 @@
 	
 	
 	    <section<?php print $content_column_class; ?>>
-		    
-		    
-	
 	      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 	      <a id="main-content"></a>
 	      <?php print render($title_prefix); ?>
@@ -300,7 +301,7 @@
 	        <h1 class="page-header"><?php print $title; ?></h1>
 	      <?php endif; ?>
 	      <?php print render($title_suffix); ?>
-<!-- 	      <?php print $messages; ?> -->
+			<!-- <?php print $messages; ?> -->
 	      <?php if (!empty($tabs)): ?>
 	        <?php print render($tabs); ?>
 	      <?php endif; ?>
@@ -321,6 +322,19 @@
 	
 	  </div>
 	</div>
+	
+      <?php if (!empty($page['social_share'])): ?>
+        <div class="container"><?php print render($page['social_share']); ?></div>
+      <?php endif; ?>	
+
+	<?php if (!empty($page['project_spotlight'])) { ?>
+		<div class="project-spotlight-wrapper">
+			<div class="project-spotlight container">
+				<?php echo render($page['project_spotlight']); ?>
+			</div>
+		</div>
+	<?php } ?>
+	
 	<div class="footer-wrapper">
 		<footer class="footer container">
 		  <?php print render($page['footer']); ?>

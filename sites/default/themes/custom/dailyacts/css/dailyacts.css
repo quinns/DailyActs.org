@@ -60,17 +60,28 @@ ul.navbar-nav.secondary #donate a:hover{
 	padding-right: 5px;
 	opacity: .75;
 }
-.navbar-nav a{
 
-}
 .navbar-default .navbar-nav .active a,
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav .active .nolink,
+.navbar-default .navbar-nav>li>.nolink{
+
 	color: #fff;	
 	font-weight: 400;
 	font-size: 16px;
 }
+
+.navbar-nav .nolink{
+/*
+	padding-top: 15px;
+	padding-bottom: 15px;
+*/
+	padding: 15px;
+	padding-bottom: 13px;
+	display: block;
+}
 .dropdown-menu {
-	background-color: #7BAD3A;
+/* 	background-color: #7BAD3A; */
 }
 .dropdown-menu>li>a:hover, 
 .dropdown-menu>li>a:focus{
@@ -126,6 +137,7 @@ header#navbar{
 	color: #fff;
 	font-size: 12px;
 	text-transform: uppercase;
+	border: 1px solid #fff;
 }
 
 body.not-front header#navbar{
@@ -421,6 +433,15 @@ body.node-type-event .field-name-field-featured-image img{
 	text-align: right;
 }
 
+/* ! NODES */
+
+body.page-node .field-name-field-featured-image{
+	max-width: 50;
+	float: left;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+
 
 /* ! VIDEO NODES */
 body.node-type-video .field-name-field-video{
@@ -432,6 +453,25 @@ body.node-type-video .field-name-field-video{
 /* 	height: 165px;	 */
 width: 100%;
 height: auto;
+}
+
+/* !"HOW WE HELP" VIEW */
+.view-how-we-help .views-field-title{
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 28px;
+}
+
+/* !BLOG */
+
+body.page-blog .node-blog h2{
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 28px;
+
+}
+
+body.page-blog ul.list-inline{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 }
 
 .view-id-videos .views-field-title{
@@ -456,14 +496,71 @@ body.node-type-staff .field-name-field-job-title{
 	line-height: 2em;
 }
 /*! RRSSB */
+
+
 #block-rrssb-rrssb h2.block-title{
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	opacity: .5;
 	text-transform: uppercase;
+	margin-top: 1em;
 }
 
+/* !PROJECT SPOTLIGHT BLOCK */
+.project-spotlight-wrapper{
+	background-color:  #F58400;
+	margin-top: 1em;
+/* 	margin-bottom: 1em; */
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/*
+#block-views-projects-block-1 .views-field-field-featured-image img{
+	object-fit: cover;
+	overflow: hidden;
+  width: 100%;
+  max-height: 150px;
+}
+*/
+#block-views-projects-block-1 a{
+	text-decoration: none;
+}
+#block-views-projects-block-1 .featured-project-thumbnail{
+	width: 100%;
+	height: 220px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 10px solid #fff;
+	background-color: #666;
+	margin-bottom: 1em;
+}
+#block-views-projects-block-1 .fpt-title-wrapper{
+	width: 100%;
+	height: 35px;
+	background: #333;
+	color: #fff;
+	padding: 5px;
+	position: relative;
+	top: 166px;
+	opacity: 0.8;
+}
+#block-views-projects-block-1 .view-footer{
+	clear: both;
+	text-align: center;
+}
+#block-views-projects-block-1 .view-footer .btn{
+	background: transparent;
+/* 	margin-top: 1em; */
+	color: #fff;
+	border: 1px solid #fff;
+	
+}
 
+#block-views-projects-block-1 i.fa{
+	margin-right: 1em;
+	color: #fff;
+}
 /*! FRONT PAGE BLOCKS */
 #block-block-5{
 	margin-top: 1em;
@@ -501,6 +598,10 @@ body.node-type-staff .field-name-field-job-title{
 /*! FOOTER */
 footer.footer{
 	border-top: none;
+
+}
+body.front .footer{
+	margin-top: 0;
 }
 .footer-wrapper{
 	background-color: #333;
@@ -644,7 +745,7 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 /* ! MEDIA QUERIES */
 
 
-@media (min-width: 979px) {
+@media (min-width: 767px) {
 /* enable bootstrap menu to activate on hover, larger screens only */
 	.dropdown:hover .dropdown-menu {
 		display: block;
@@ -732,13 +833,8 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 	header#navbar{
 		margin-left: 150px;
 	}
-	
-
-	
-	
-	
-
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
 	.navbar.container{
 		max-width: 100%;
