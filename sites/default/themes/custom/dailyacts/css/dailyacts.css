@@ -101,13 +101,7 @@ ul.navbar-nav.secondary #donate a:hover{
 .navbar-nav.secondary li a.fa-calendar{
 	padding-left: 0;
 }
-/* wtf is this doing here?!
-.navbar-collapse{
-	width: 200px;
-	float: right;
-	margin: 0;	
-}
-*/
+
 
 /*! MAIN NAVBAR */
 .supernav{
@@ -208,7 +202,7 @@ body.not-front header#navbar .navbar-brand{
 	line-height: 1.25em;
 }
 #front-carousel{
-/* 	top: -100px; */
+	top: -10px;
 	clear: both;
 }
 #front-carousel .item{
@@ -852,12 +846,48 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 		height: 300px;
 	}
 }
-@media(min-width: 421px) and (max-width: 768px){
+@media(max-width: 768px){
 	.navbar-nav.secondary li span.email,
 	.navbar-nav.secondary li span.events, 
 	.navbar-nav.secondary li span.donate {
 		display: none;
 	}
+	
+	
+	
+	/* 	!MOBILE MENU */
+	header#navbar .navbar-collapse{
+		position: relative;
+		top: -75px;
+		border: none;
+		background-color: #333;	
+/* 	    width: 100%; */
+	    margin: 0;
+	}
+	header#navbar .navbar-collapse,
+	header#navbar .navbar-collapse a{
+		color: #fff;
+	}
+	header#navbar  .primary-nav-wrapper{
+		background-color: transparent;
+	}
+	a.navbar-brand{		
+	    height: 90px;
+	    width: 80px;
+	}
+
+	.navigation-wrapper  a.name{
+	    height: 90px;
+	    width: 80px;
+		
+	}
+
+
+
+	
+}
+@media(min-width: 421px) and (max-width: 768px){
+
 	
 	#front-carousel .carousel-caption h1{
 		font-size: 70px;
@@ -874,13 +904,24 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 	}
 */
 	header#navbar{
+/*
 		margin-left: 150px;
+		max-width: 760px;
+*/
 	}
 }
+@media (max-width: 992px){
 
+/* .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .active .nolink, .navbar-default .navbar-nav>li>.nolink */
+	header#navbar a,
+	header#navbar .nolink{
+		font-size: 12px;
+	}
+
+}
 @media (min-width: 768px) and (max-width: 992px) {
 	.navbar.container{
-		max-width: 100%;
+/* 		max-width: 100%; */
 	}
 }
 

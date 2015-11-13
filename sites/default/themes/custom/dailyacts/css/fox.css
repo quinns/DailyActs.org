@@ -95,5 +95,29 @@
 
 }
 
+@media(min-width: 420px) {
+#site-body{
+		position: relative;
+		top: -100px;
+	}
+}
 
-/*.views-field-field-featured-image*/
+@media(max-width: 421px) {
+	#site-body{
+		position: relative;
+		top: -45px;
+	}
+	#front-carousel .carousel-caption {
+		padding-bottom: 30px;
+	}
+}
+
+@media(max-width: 768px) {
+		.navbar-nav.secondary li span.email,
+		.navbar-nav.secondary li span.events, 
+		.navbar-nav.secondary li span.donate {
+		display: none;
+	}
+
+	
+}
