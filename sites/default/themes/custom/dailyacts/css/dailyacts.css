@@ -782,6 +782,8 @@ body.node-type-project .field-name-field-project-images .field-item{
 }
 #block-menu-block-1 h2 a{
 	font-size: 30px;
+	text-decoration: none;
+	font-weight: normal;
 }
 #block-menu-block-1 a{
 	font-family: 'Rokkitt', sans-serif;
