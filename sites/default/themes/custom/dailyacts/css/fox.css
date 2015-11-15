@@ -95,6 +95,73 @@
 
 }
 
+/*  =========================  PROJECTS  ===================================== */
+
+
+
+.view-projects .views-row {
+	padding: 25px 30px 15px 0;
+	border-bottom: solid 1px #eee;
+	min-height: 220px;
+}
+
+.view-projects .views-field-field-featured-image img {
+	float: left;
+	padding: 10px;
+/* 	margin: 3px 40px 0 2px; */
+	margin: 0 1em .5em 0;
+	/*border-radius: 10px;*/
+	border: solid 1px #eee;
+}
+
+.view-projects .views-field-title {
+	margin-top: 0;
+}
+.view-projects .views-field-title a {
+	font-family: Rokkitt, sans-serif;
+	font-size: 22px;
+	color: #333;
+
+}
+
+/*
+	
+.view-projects p {
+	font-size: 16px;
+	color: #454545;
+	line-height: 1.0em;
+	padding: 5px 50px 5px 0;
+}
+
+
+#block-views-project-sidebar-block-1 {
+	background-color: inherit;
+	font-family: Rokkitt;
+	color: #aaa;
+	list-style: none;
+}
+
+#block-views-project-sidebar-block-1 h2 {
+	font-family: "Architects Daughter",cursive;
+	color: #333;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #eee;
+}
+
+#block-views-project-sidebar-block-1 h3 {
+	font-family: Rokkitt, sans-serif;
+	font-size: 20px;
+}
+
+.node-project p {
+	font-family: "Open Sans";
+	font-size: 16px;
+	line-height: 1.5em;
+}
+*/
+
+/*  =========================  MEDIA QUERIES  ===================================== */
+
 @media(min-width: 420px) {
 #site-body{
 		position: relative;
@@ -109,6 +176,9 @@
 	}
 	#front-carousel .carousel-caption {
 		padding-bottom: 30px;
+	}
+	.view-projects .views-field-field-featured-image img  {
+		margin-bottom: 10px;
 	}
 }
 

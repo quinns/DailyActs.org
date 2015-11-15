@@ -7,6 +7,10 @@ a{
 	color: #7BAD3A;
 	text-decoration: underline;
 }
+a:hover,
+a:focus{
+	text-decoration: none;
+}
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Architects Daughter', cursive;
 }
@@ -450,10 +454,12 @@ body.node-type-event .field-name-field-featured-image img{
 /* ! NODES */
 
 body.page-node .field-name-field-featured-image{
-	max-width: 50;
+	max-width: 50%;
 	float: left;
 	margin-right: 1em;
 	margin-bottom: .5em;
+	padding: 10px;
+	border: 1px solid #ccc;
 }
 
 
@@ -672,6 +678,17 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 
 
 
+/* !PROJECT NODES */
+body.node-type-project .field-name-field-project-images .field-label{
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 22px;
+}
+body.node-type-project .field-name-field-project-images .field-item{
+	padding-bottom: 15px;
+	padding-left: 0;
+}
 /*! SIDEBARS */
 
 
@@ -756,6 +773,41 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 #block-block-6 .error{
 	padding: 10px;
 }
+
+/* ! SUB NAVIGATION */
+
+
+#block-menu-block-1{
+	margin-bottom: 1em;
+}
+#block-menu-block-1 h2 a{
+	font-size: 30px;
+}
+#block-menu-block-1 a{
+	font-family: 'Rokkitt', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+}
+/*
+#block-menu-block-1 a.active{
+	text-decoration: none;
+}
+#block-menu-block-1 a.active:before{
+	content: '> ';
+}
+*/
+#block-menu-block-1 a:hover,
+#block-menu-block-1 a:focus{
+	background-color: transparent;
+}
+
+
+.block h2{
+	margin-top: 0;
+}
+
+
 /*
 #block-block-6 .btn{
 	background-color: #7BAD3A;
@@ -861,7 +913,7 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 		height: 300px;
 	}
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
 	.navbar-nav.secondary li span.email,
 	.navbar-nav.secondary li span.events, 
 	.navbar-nav.secondary li span.donate {
@@ -875,7 +927,7 @@ body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
 		position: relative;
 		top: -75px;
 		border: none;
-		background-color: #333;	
+/* 		background-color: #333;	 */
 /* 	    width: 100%; */
 	    margin: 0;
 	}
