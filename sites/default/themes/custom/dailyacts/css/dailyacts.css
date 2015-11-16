@@ -69,9 +69,6 @@ ul.navbar-nav.secondary #donate a:hover{
 	padding-right: 5px;
 	opacity: .75;
 }
-.navbar-default .navbar-nav li.first{
-	margin-left: 20px;
-}
 .navbar-default .navbar-nav li{
 	margin-right: 5px;
 }
@@ -80,23 +77,19 @@ ul.navbar-nav.secondary #donate a:hover{
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav .active .nolink,
 .navbar-default .navbar-nav>li>.nolink{
-
 	color: #fff;	
 	font-weight: 400;
 	font-size: 16px;
 }
 
 .navbar-nav .nolink{
-/*
-	padding-top: 15px;
-	padding-bottom: 15px;
-*/
 	padding: 15px;
 	padding-bottom: 13px;
 	display: block;
 }
 .dropdown-menu {
-/* 	background-color: #7BAD3A; */
+	background-color: #7BAD3A;
+/* 	margin-top: -2px; */
 }
 .navbar-default .navbar-nav .dropdown-menu li{
 	margin-left: 0;
@@ -153,15 +146,20 @@ header#navbar{
 	border: 1px solid #fff;
 }
 
+
 body.not-front header#navbar{
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
-/*
-.primary-nav-wrapper{
-	background-color: #7BAD3A;
+.navbar-default .navbar-nav>.active>a:focus{
+	background-color: transparent;
 }
-*/
+
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent;
+}
+
+
 
 /*! TABS */
 ul.nav-tabs a{
@@ -241,7 +239,6 @@ body.not-front header#navbar .navbar-brand{
 }
 #front-carousel .carousel-caption h1{
 	font-family: 'Architects Daughter', cursive;
-/* 	font-size: 120px; */
 	font-size: 90px;
 	text-shadow: 1px 1px 0 #ccc;
 	color: #7BAD3A;
@@ -335,7 +332,6 @@ body.not-front .interior-header-image{
 	background-size: cover;
 	background-position: center center;
 	height: 300px;
-/* 	height: 230px; */
 	top: -100px;
 	display: table;
 	width: 100%;
@@ -507,6 +503,32 @@ body.page-blog ul.list-inline{
 }
 
 
+/* !BLOG VIEW */
+
+.view-blog .row{
+	clear: both;
+	margin-bottom: 1em;
+}
+
+.view-blog .views-field-picture img,
+.user-picture img{
+	height: auto;
+	float: left;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+
+.view-blog h2 a{ 
+	font-family: 'Rokkitt', sans-serif;
+}
+
+.view-blog .posted-on{
+	font-family: 'Architects Daughter', cursive;
+	font-size: 16px;
+}
+
 /*! STAFF NODES */
 body.node-type-staff .field-name-field-job-title{
 	font-family: 'Open Sans', san-serif;
@@ -542,18 +564,10 @@ body.node-type-staff .field-name-field-job-title{
 .project-spotlight-wrapper{
 	background-color:  #F58400;
 	margin-top: 1em;
-/* 	margin-bottom: 1em; */
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
-/*
-#block-views-projects-block-1 .views-field-field-featured-image img{
-	object-fit: cover;
-	overflow: hidden;
-  width: 100%;
-  max-height: 150px;
-}
-*/
+
 #block-views-projects-block-1 a{
 	text-decoration: none;
 }
@@ -602,11 +616,6 @@ body.node-type-staff .field-name-field-job-title{
     padding: 5px 10px 5px 10px;
     top: -5px;
     position: relative;
-/*
-	height: 35px; 
-    min-width: 100px;
-    text-align: center;
-*/
 }
 /*! FRONT PAGE BLOCKS */
 #block-block-5{
@@ -668,14 +677,6 @@ body.front .footer{
 .footer-wrapper .recent-blogs .views-row{
 	margin-bottom: 1em;	
 }	
-
-
-/*! MAILCHIMP PAGE */
-body.page-newsletter .mailchimp-signup-subscribe-form .form-control{
-
-
-}
-
 
 
 /* !PROJECT NODES */
@@ -791,14 +792,7 @@ body.node-type-project .field-name-field-project-images .field-item{
 	font-size: 18px;
 	font-weight: 700;
 }
-/*
-#block-menu-block-1 a.active{
-	text-decoration: none;
-}
-#block-menu-block-1 a.active:before{
-	content: '> ';
-}
-*/
+
 #block-menu-block-1 a:hover,
 #block-menu-block-1 a:focus{
 	background-color: transparent;
@@ -810,12 +804,7 @@ body.node-type-project .field-name-field-project-images .field-item{
 }
 
 
-/*
-#block-block-6 .btn{
-	background-color: #7BAD3A;
-	border: 0;
-}
-*/
+
 /*! CREDITS BLOCK */
 .subfooter{
 	margin-top: 2em;
@@ -847,7 +836,7 @@ body.node-type-project .field-name-field-project-images .field-item{
 	color: #428bca;
 }
 
-/* } */
+
 /* ! MEDIA QUERIES */
 
 
@@ -859,13 +848,6 @@ body.node-type-project .field-name-field-project-images .field-item{
 	.navbar .dropdown-menu {
 		 margin-top: 0px;
 	}
-	
-/*
-	body.front #site-body{
-		position: relative;
-		top: -60px;
-	}
-*/
 }
 @media (min-width: 768px) {
 	#site-body{
@@ -884,10 +866,7 @@ body.node-type-project .field-name-field-project-images .field-item{
 	/*! CALENDAR */
 	.fc-event-inner{
 		max-height: 200px;
-	}
-
-
-	
+	}	
 }
 @media (max-width: 992px) {
 	header#navbar{
@@ -923,15 +902,14 @@ body.node-type-project .field-name-field-project-images .field-item{
 	}
 	
 	
-	
 	/* 	!MOBILE MENU */
 	header#navbar .navbar-collapse{
 		position: relative;
 		top: -75px;
 		border: none;
-/* 		background-color: #333;	 */
-/* 	    width: 100%; */
+		background-color: #333;	
 	    margin: 0;
+	    margin-left: 100px;
 	}
 	header#navbar .navbar-collapse,
 	header#navbar .navbar-collapse a{
@@ -950,38 +928,25 @@ body.node-type-project .field-name-field-project-images .field-item{
 	    width: 80px;
 		
 	}
-
-
-
-	
 }
 @media(min-width: 421px) and (max-width: 768px){
-
-	
 	#front-carousel .carousel-caption h1{
 		font-size: 70px;
 	}
 	#front-carousel .carousel-caption h3{	
 		font-size: 16px;
 	}
-
+	.navbar.container{
+		max-width: 860px;
+		margin-left: 180px;
+	}
 }
 @media (min-width: 768px) {
-/*
-	body.front .main-container{
-		margin-top: -90px;
-	}
-*/
-	header#navbar{
-/*
-		margin-left: 150px;
-		max-width: 760px;
-*/
+	.navbar-default{
+		margin-left: 180px;
 	}
 }
 @media (max-width: 992px){
-
-/* .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .active .nolink, .navbar-default .navbar-nav>li>.nolink */
 	header#navbar a,
 	header#navbar .nolink{
 		font-size: 12px;
@@ -992,13 +957,4 @@ body.node-type-project .field-name-field-project-images .field-item{
 	.navbar-default .navbar-nav li{
 		margin-right: 0;
 	}
-
-
 }
-@media (min-width: 768px) and (max-width: 992px) {
-	.navbar.container{
-/* 		max-width: 100%; */
-	}
-}
-
-
