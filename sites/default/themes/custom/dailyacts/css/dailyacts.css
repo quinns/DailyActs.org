@@ -836,7 +836,15 @@ body.node-type-project .field-name-field-project-images .field-item{
 	color: #428bca;
 }
 
+body.page-user .main-container form .form-control{
+	width: auto;
+}
 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus{
+	background-color: #f38420;
+}
 /* ! MEDIA QUERIES */
 
 
