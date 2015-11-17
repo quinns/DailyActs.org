@@ -344,7 +344,7 @@
 	<?php 
 		echo l('<img src="'.$theme_path.'images/WIMPgives-logo.png">', 'http://www.wimpgives.com', array('html' => true, 'attributes' => array('title' => t('This website was designed and built for free by WIMPgives'), 'target' => '_blank', 'class' => array('wimpgives')))); ?>
 	Site donated by <?php echo l(t('WIMPgives'), 'http://www.wimpgives.com', array('attributes' => array('target' => '_blank')));
-	 ?>	
+	 ?> | &copy; <?php echo date("Y").' '.l('DailyActs.org', '/'); ?>. All rights reserved.
 	</div>
 </div>
 

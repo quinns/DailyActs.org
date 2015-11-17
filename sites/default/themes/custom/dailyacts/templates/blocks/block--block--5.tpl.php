@@ -51,32 +51,17 @@
   <h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
 <?php endif;?>
   <?php print render($title_suffix); ?>
-
   <div class="content"<?php print $content_attributes; ?>>
 	  <div class="row">
-	    
-	    
 	    <div class="col-md-6">
 		<h2><i class="fa fa-folder-open" aria-hidden="true"></i> Latest posts</h2>
-		
-		<?php echo views_embed_view('latest_posts', 'block_1'); ?>
-			
+			<?php echo views_embed_view('latest_posts', 'block_1'); ?>
 	    </div>
-
 	    <div class="col-md-6">
 		    <h2><i class="fa fa-calendar" aria-hidden="true"></i> Upcoming events</h2>
 		<?php echo views_embed_view('upcoming_events', 'block_1'); ?>
 	    </div>
-	    
-	    <?php //print $content 
-		    
-				    
-		    
-		    
-		    
-		    
-		    
-	    ?>
+	    <?php //print $content ?>
 	  </div>
   </div>
 </div>

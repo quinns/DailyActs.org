@@ -364,6 +364,9 @@ body.node-type-article .field-name-field-image img{
 	min-width: 40;
 	height: auto;
 }
+body.node-type-article .user-picture{
+	display: none;
+}
 
 
 /*! LATEST POSTS BLOCK */
@@ -406,12 +409,23 @@ body.node-type-article .field-name-field-image img{
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 }
+.view-upcoming-events .event-location{
+/* 	font-family: "Open Sans", sans-serif; */
+	color: #666;
+	font-size: 14px;
+}
+.view-upcoming-events .edit-link{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+
+
+
 
 /*! EVENT NODES */
 body.node-type-event .field-name-field-featured-image img{
 	float: left;
-	margin-right: 1em;
-	margin-bottom: .5em;
 	max-width: 250px;
 	min-width: 30%;
 	height: auto;
@@ -446,6 +460,34 @@ body.node-type-event .field-name-field-featured-image img{
 	clear: both;
 	text-align: right;
 }
+
+/* !FRONT PAGE EVENTS */
+.view-upcoming-events .event-wrapper{
+	background-color: #EFAB70;
+	text-align: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    color: #fff;
+    padding-top: 20px;
+    border: 10px solid #F3F3F3;
+}
+.view-upcoming-events .event-wrapper .day{
+	font-size: 32px;
+}
+.view-upcoming-events .views-field-field-event-date a{
+	text-decoration: none;
+}
+
+.view-upcoming-events .event-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.view-upcoming-events .event-wrapper:hover .date-text{
+	display: none;
+}
+
 
 /* ! NODES */
 
@@ -822,6 +864,7 @@ body.node-type-project .field-name-field-project-images .field-item{
 	clear: both;    
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	margin-bottom: 1em;
 }
 .subfooter .wimpgives img:hover,
 .subfooter .wimpgives img:focus{ 
@@ -844,6 +887,11 @@ body.page-user .main-container form .form-control{
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus{
 	background-color: #f38420;
+}
+
+
+.copyright{
+	margin: 1em 0 1em 0;
 }
 /* ! MEDIA QUERIES */
 
