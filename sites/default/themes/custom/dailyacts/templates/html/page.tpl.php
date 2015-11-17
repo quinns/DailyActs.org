@@ -72,12 +72,11 @@
  *
  * @ingroup themeable
  */
- $theme_path = '/'.path_to_theme().'/';
 
-// dpm($node, 'node');
- ?>
+$theme_path = '/'.path_to_theme().'/';
 
-<?php if (!empty($secondary_nav)): ?>
+if (!empty($secondary_nav)): ?>
+
 <div class="container supernav">
 	<div class="wrapper"><?php print render($secondary_nav); ?></div>
 </div>
@@ -99,21 +98,10 @@
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
-			Menu
-			<!--
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			-->
+        Menu
       </button>
      </div>
-
-      
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-	
-	
-
-
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
@@ -131,12 +119,8 @@
   </div>
 </header>
 </div>
-<!-- <div class="main-container container"> -->
-
 
 <div id="site-body">
-	
-	
 <!-- CAROUSEL -->
 <?php if ($is_front) {
 	$slides = entity_load('bean');
@@ -158,7 +142,7 @@
 			} else {
 				$active = null;
 			}
-				echo '<li data-target="#front-carousel" data-slide-to="'.$key.'" '.$active.'></li> ';
+			echo '<li data-target="#front-carousel" data-slide-to="'.$key.'" '.$active.'></li> ';
 		}
 	}
 	?>
@@ -167,7 +151,7 @@
   <div class="carousel-inner" role="listbox">
   		<?php 
 		foreach($slide_set as $key => $value){ 
-				$slide['image'] = file_create_url($value->field_carousel_image[LANGUAGE_NONE][0]['uri']);
+				$slide['image'] = image_style_url('header_image', $value->field_carousel_image[LANGUAGE_NONE][0]['uri']);				
 				if(isset($value->field_caption_1[LANGUAGE_NONE][0]['safe_value'])){ 
 					$slide['caption1'] =  $value->field_caption_1[LANGUAGE_NONE][0]['safe_value']; 
 				}
@@ -185,7 +169,6 @@
 				}
 		?>
 		    <div class="item <?php echo $active; ?> slide-<?php echo $key; ?>" style="background-color: #000;">
-			<!-- <img src="<?php echo $slide['image']; ?>" class="slide-art"> -->
 			      <div class="carousel-caption">
 			        <h3 class="caption-1"><?php echo $slide['caption1']; ?></h3>
 			        <h1><?php echo $slide['headline']; ?></h1>
@@ -195,16 +178,9 @@
 					</div>
 			      </div>
 			<div class="slide-art" class="slide-art" style="  background-image: url(<?php echo $slide['image']; ?>); "></div>
-
-
-		      
-		      </div>
-		    
-		<? } ?>    
-    
-    
+      </div>		    
+	<? } ?>    
   </div>
-
   <!-- Controls -->
   <a class="left carousel-control" href="#front-carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -218,17 +194,11 @@
 <? } ?>
 <!-- END CAROUSEL -->
 
-
-
-
-
-  <header role="banner" id="page-header">
+<header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
-
     <?php print render($page['header']); ?>
-    
 <?php
 	// 	try to load a custom header
 	if(!empty($node->field_site_section['und'][0]['tid'])){
@@ -238,61 +208,32 @@
 
 
 	if(!empty($header_image)){
-		$header_image = file_create_url($header_image);
+		$header_image = image_style_url('header_image', $header_image);
 	} else{
 		$header_image = $theme_path.'images/mountains.jpg';
 	}
-
-/*
-	if(empty($header_image)){ // if none found, use the default
-		$header_image = $theme_path.'images/mountains.jpg';
-	}
-*/
 ?>
-
-
 <div class="interior-header-image" data-parallax="scroll" data-image-src="<?php echo $header_image; ?>">
-<!-- <div class="interior-header-image"> -->
-	       <?php if (!empty($site_section)) { ?>
-		        <h1 class="section-header"><div class="masking-tape"><span><?php print $site_section->name; ?></span></div></h1>
-	       <? } ?>
+   <?php if (!empty($site_section)) { ?>
+        <h1 class="section-header"><div class="masking-tape"><span><?php print $site_section->name; ?></span></div></h1>
+   <? } ?>
 	       
-</div>
-
-    
+</div>    
   </header> <!-- /#page-header -->
-
-
-
 	<?php if (!empty($messages)){ print '<div class="container">'.$messages.'</div>'; } ?>
-
 	<?php if (!empty($page['front_features'])) { ?>
 	        <div class="front-features"><?php print render($page['front_features']); ?></div>
 	<?php }	?>
-	
-	
-	
-	
 	      <?php if (!empty($page['highlighted'])): ?>
 	        <div class="highlighted"><?php print render($page['highlighted']); ?></div>
-	      <?php endif; ?>
-
-
-
-
-	
+	      <?php endif; ?>	
 	<div class="main-container container">
-		
 	  <div class="row">
-	
 	    <?php if (!empty($page['sidebar_first'])): ?>
 	      <aside class="col-sm-3" role="complementary">
 	        <?php print render($page['sidebar_first']); ?>
 	      </aside>  <!-- /#sidebar-first -->
 	    <?php endif; ?>
-	
-	
-	
 	    <section<?php print $content_column_class; ?>>
 	      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 	      <a id="main-content"></a>
@@ -301,7 +242,7 @@
 	        <h1 class="page-header"><?php print $title; ?></h1>
 	      <?php endif; ?>
 	      <?php print render($title_suffix); ?>
-			<!-- <?php print $messages; ?> -->
+			<?php // print $messages; ?>
 	      <?php if (!empty($tabs)): ?>
 	        <?php print render($tabs); ?>
 	      <?php endif; ?>
@@ -313,20 +254,16 @@
 	      <?php endif; ?>
 	      <?php print render($page['content']); ?>
 	    </section>
-	
 	    <?php if (!empty($page['sidebar_second'])): ?>
 	      <aside class="col-sm-3" role="complementary">
 	        <?php print render($page['sidebar_second']); ?>
 	      </aside>  <!-- /#sidebar-second -->
 	    <?php endif; ?>
-	
 	  </div>
 	</div>
-	
       <?php if (!empty($page['social_share'])): ?>
         <div class="container"><?php print render($page['social_share']); ?></div>
       <?php endif; ?>	
-
 	<?php if (!empty($page['project_spotlight'])) { ?>
 		<div class="project-spotlight-wrapper">
 			<div class="project-spotlight container">
@@ -334,7 +271,6 @@
 			</div>
 		</div>
 	<?php } ?>
-	
 	<div class="footer-wrapper">
 		<footer class="footer container">
 		  <?php print render($page['footer']); ?>
