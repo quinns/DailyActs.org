@@ -161,6 +161,15 @@ body.page-projects .view-projects .views-field-title a {
 }
 */
 
+/*  =========================  SPONSORS  ===================================== */
+
+	.views-field-field-sponsor-link-image, 
+	.views-field-field-sponsor-featured-image,
+	.views-field-field-sponsor-link {
+		margin-right: 15px; 
+
+	}
+
 /*  =========================  MEDIA QUERIES  ===================================== */
 
 @media(min-width: 420px) {

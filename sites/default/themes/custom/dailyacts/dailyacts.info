@@ -63,8 +63,9 @@ stylesheets[all][] = css/fox.css
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 ; settings[bootstrap_cdn] = ''
 
-scripts[] = 'js/dailyacts.js'
+scripts[] = 'js/grids.min.js'
 scripts[] = 'js/parallax.min.js'
+scripts[] = 'js/dailyacts.js'
 
 ; to support touch events (swipe) on the carousel
 scripts[] = 'js/jquery.mobile.custom.min.js'

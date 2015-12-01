@@ -28,6 +28,8 @@ jQuery(document).ready(function($) {
 	// 	help the calendar play nice on small screens
 	$('body.page-events .fc-header').wrap("<div class='table-responsive'></div>");
 
+	// 	equalize the grid height on the sponsors view
+	$('.view-sponsors .views-row').responsiveEqualHeightGrid();
 
 
 // 	$('#block-menu-block-1 a.active').before('> ');
